@@ -1,0 +1,138 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3363724081" file="G:\HAZELETT CASTER\Stress Analysis\Packaging_2\Opticast.prj" location="G:\HAZELETT CASTER\Stress Analysis\Packaging_2" name="Opticast" preferred-package-location="G:\HAZELETT CASTER\Stress Analysis\Packaging_2\Opticast\MCR_INSTALL" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Opticast</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>OVGU</param.authnamewatermark>
+    <param.email>info@urlau-innomanagement.com</param.email>
+    <param.company>Urlau Innomanagement GmbH</param.company>
+    <param.summary>Software for Optimal Casting</param.summary>
+    <param.description>Dr. Ulrich Urlau
+Dr.  Ashok Kumar Nallathambi
+Prof.  Eckehard Specht</param.description>
+    <param.screenshot>${PROJECT_ROOT}\desing1.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\Urlau Innomanagement GmbH\Opticast\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo>${PROJECT_ROOT}\desing1.png</param.logo>
+    <param.install.notes>1. Check whether MCR is installed in your PC or not
+2. Opticast.exe runnning folder should contain 3 '.mat' files
+3.  Run Opticast.exe and the results are stored within 'Simulation' subfolder</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Opticast\TEST</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Opticast\EXE</param.files.only>
+    <param.output>${PROJECT_ROOT}\Opticast\MCR_INSTALL</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\OptiCast_1.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>G:\HAZELETT CASTER\Stress Analysis\Packaging\Steel_Grade_Data.mat</file>
+      <file>${PROJECT_ROOT}\bild-swiss-steel.jpg</file>
+      <file>${PROJECT_ROOT}\bild_ovgu.jpg</file>
+      <file>${PROJECT_ROOT}\Default_Settings.mat</file>
+      <file>${PROJECT_ROOT}\MECH</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_EqmIter.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_EqmIter_Assem.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_EqmIter_Assem_Cell.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_EqmIter_Assem_Cell_Material.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_Material_Prop.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_Material_Prop2.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_POST.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_POST_EqnStress.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_POST_IP2NODE.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_POST_Plot_Contour.m</file>
+      <file>${PROJECT_ROOT}\MECH\MECH_POST_Plot_Contour_color.m</file>
+      <file>${PROJECT_ROOT}\Mech_1.fig</file>
+      <file>${PROJECT_ROOT}\Mech_1.m</file>
+      <file>${PROJECT_ROOT}\Mech_Result_Points.jpg</file>
+      <file>${PROJECT_ROOT}\Mech_Results_1.fig</file>
+      <file>${PROJECT_ROOT}\Mech_Results_1.m</file>
+      <file>${PROJECT_ROOT}\Mesh_Conversion.m</file>
+      <file>${PROJECT_ROOT}\model_fig.jpg</file>
+      <file>${PROJECT_ROOT}\Solver_new.m</file>
+      <file>${PROJECT_ROOT}\Testing.m</file>
+      <file>${PROJECT_ROOT}\Theory_Manual.pdf</file>
+      <file>${PROJECT_ROOT}\User_Manual_1.pdf</file>
+      <file>${PROJECT_ROOT}\User_Manual_2.pdf</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>G:\HAZELETT CASTER\Stress Analysis\Packaging\Material_Bank.mat</file>
+      <file>G:\HAZELETT CASTER\Stress Analysis\Packaging\Steel_Grade_Data.mat</file>
+      <file>${PROJECT_ROOT}\Default_Settings.mat</file>
+      <file>${PROJECT_ROOT}\Theory_Manual.pdf</file>
+      <file>${PROJECT_ROOT}\User_Manual_1.pdf</file>
+      <file>${PROJECT_ROOT}\User_Manual_2.pdf</file>
+    </fileset.package>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\OptiCast_1.fig</file>
+      <file>${PROJECT_ROOT}\Secondary_Cooling.m</file>
+      <file>${PROJECT_ROOT}\solve_mech_2.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Opticast\TEST" name="readme.txt" optional="true">G:\HAZELETT CASTER\Stress Analysis\Packaging_2\Opticast\TEST\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Opticast\TEST" name="splash.png" optional="false">G:\HAZELETT CASTER\Stress Analysis\Packaging_2\Opticast\TEST\splash.png</file>
+      <file location="${PROJECT_ROOT}\Opticast\TEST" name="Opticast.exe" optional="false">G:\HAZELETT CASTER\Stress Analysis\Packaging_2\Opticast\TEST\Opticast.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2015b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
